@@ -1,0 +1,26 @@
+import random
+words = ["apple", "dog", "pizza", "boy"]
+win = False
+word = words[random.randint(0, len(words) - 1)]
+guessed = []
+display = []
+for i in range(0, (len(word))):
+    display.append("_")
+print("Start guessing!!!!!")
+print(display)
+while win == False:
+    guess = input("Guess a letter...")
+    for x in range(len(word)):
+        if guess in word[x]:
+            display[x] = guess
+        print(display[x], end=" ")
+    if guess not in word:
+        print("Not in word!!!")
+        guessed.append(guess)
+        print("Here is what you've already guessed: ")
+        print(guessed)
+    else:
+        print("That letter was in the word")
+    if '_' not in display:
+        print("YOU WIN!!!!")
+        win = True

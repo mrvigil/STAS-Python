@@ -1,0 +1,47 @@
+def drawsnowman(pic):
+    if pic == 1:
+      print("")
+      print("      _______       ")
+      print("    /        \       ")
+      print("    |        |     ")
+      print("     \______/      ")
+      print("     /      \        ")
+      print("    |        |     ")
+      print("     \______/     ")
+      print("")    
+    elif pic == 2:
+      print("")
+      print("      _______       ")
+      print("    /  x  x  \       ")
+      print("    |        |     ")
+      print("     \______/      ")
+      print("     /      \        ")
+      print("    |        |     ")
+      print("     \______/     ")
+      print("")    
+    elif pic == 3:   
+      print("")
+      print("      _______       ")
+      print("    /  x  x  \       ")
+      print("    |    v   |     ")
+      print(" _   \______/     ")
+      print("   \ /      \        ")
+      print("    |        |     ")
+      print("     \______/     ")
+      print("")    
+    elif pic == 4:  
+      print("")
+      print("      _______       ")
+      print("    /  x  x  \       ")
+      print("    |    v   |     ")
+      print(" _   \______/  _   ")
+      print("   \ /   8  \ /      ")
+      print("    |    8   |     ")
+      print("     \______/     ")
+      print("")    
+
+import time
+for i in range(1,5):
+  print('\033c')
+  drawsnowman(i)
+  time.sleep(.5)

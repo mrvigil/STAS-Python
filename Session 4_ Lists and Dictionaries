@@ -1,0 +1,51 @@
+jokes={"Where does a snowman keep his money?": "In a snow bank",
+"What do you call a snowman who tells tall tales?" : "A snow-fake!",
+"What do they sing at a snowman’s birthday party?":  "Freeze a jolly good fellow.",
+"What do you call a snowman in the summer?":"A puddle."}
+snowman1=[
+'       _________        ' ,
+'      /         \       ' ,
+'      |  x   x  |      ' ,
+' __   |    v    |  __  ' ,
+'   \  \_________/ /     ',
+'    \ /    O    \/      ' ,
+'      |    O    |      ' ,
+'      |    O    |      ' ,
+'      \_________/       ']
+
+snowman2=[
+'       _________        ' ,
+'      /         \       ' ,
+'      |  x   x  |      ' ,
+' __   |    v    |  __  ' ,
+'   \  \_________/ /     ',
+'    - /    O    \-      ' ,
+'      |    O    |      ' ,
+'      |    O    |      ' ,
+'      \_________/       ']
+
+snowman3=[
+'       _________        ' ,
+'      /         \       ' ,
+'      |  x   x  |      ' ,
+'      |    v    |    ' ,
+'  /-  \_________/ --\   ',
+'    \ /    O    \/      ' ,
+'      |    O    |      ' ,
+'      |    O    |      ' ,
+'      \_________/       ']
+snowmen=[snowman1, snowman2, snowman3]
+import time
+print()
+for q,a in jokes.items():
+  for x in range(0,len(snowmen)):
+    for y in range(0, len(snowmen[x])):
+      if x==0 and y==1:
+        print(snowmen[x][y],q)
+      elif x==1 and y==3:
+        print(snowmen[x][y],a)
+      else:
+        print(snowmen[x][y])
+    time.sleep(1)
+    print('\033c')
+  time.sleep(1)

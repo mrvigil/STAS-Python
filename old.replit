@@ -1,0 +1,8 @@
+language="python"
+run="python 'main.py'"
+##run="python 'Session 1: guess a number.py'"
+##run="python 'Session 2: snowman.py'"
+##run="python 'Session 3: Functions.py'"
+##run="python 'Session 3: Functions and Lists.py'"
+##run="python 'Session 4: Lists & Functions 2.py'"
+##run="python 'Turtle Graphics.py'"

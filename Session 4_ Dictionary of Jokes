@@ -1,0 +1,12 @@
+jokes={"Where does a snowman keep his money?": "In a snow bank",
+"What do you call a snowman who tells tall tales?" : "A snow-fake!",
+"What do they sing at a snowman’s birthday party?":  "Freeze a jolly good fellow.",
+"What do you call a snowman in the summer?":"A puddle."}
+import time
+print()
+for q,a in jokes.items():
+  print(q)
+  time.sleep(1)
+  print(a)
+  time.sleep(1)
+  print('\033c')
